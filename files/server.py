@@ -21,7 +21,6 @@ def kanye_quote() -> str:
             posts = response.json()
             return posts
         else:
-            
             return f"Error: , {response.status_code}"
     except requests.exceptions.RequestException as e:
         return f"Error: , {e}"
